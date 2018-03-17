@@ -107,10 +107,84 @@
                     <small>This list is current as of Build 330.</small>
                 </p>
             </div>
+          
+          <!-- template
+          <div class="row" id="examplemodule">
+            <h2>Module Name</h2>
+            <p>Module description.</p>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="example"> <!-- change id name to command name - ->
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" aria-expanded="true" aria-controls="example-c" href="#example-c"> <!-- change aria-controls and href to command name-c - ->
+                    <b>Command Name</b> - Short Description - !command &lt;args&gt; <!-- <br>
+                    <small>Has subcommands.</small> - ->
+                  </a>
+                </h4>
+              </div>
+              <div id="example-c" aria-labelledby="example" class="panel-collapse collapse in" role="tabpanel"> <!-- change id, aria-labelledby to name-c, name respectively - ->
+                <div class="panel-body">
+                  <p>
+                    Longer command description. Nest any subcommands or arguments in another panel, labelled Subcommands/Arguments/etc. ID of any subcommands should be, for example, <code>example-subcommandname</code>, <code>example-args</code>, etc.
+                  </p>
+                  <table class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Arguments</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><kbd>args</kbd> - Detail each command argument here.</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <p>
+                    <b>Example</b>: <code>!example argument</code>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          -->
+          
             <div class="row" id="chargen">
                 <h2>CharGen</h2>
                 <p>A random character generator. This module is not integrated into SheetManager, it's meant to be used
                     as a reference while creating character sheets.</p>
+              
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="autochar"> <!-- change id name to command name -->
+                    <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" aria-expanded="true" aria-controls="autochar-c" href="#autochar-c"> <!-- change aria-controls and href to command name-c -->
+                        <b>autochar</b> - Automagically creates a dicecloud sheet. - !autochar &lt;level&gt;
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="autochar-c" aria-labelledby="autochar" class="panel-collapse collapse in" role="tabpanel"> <!-- change id, aria-labelledby to name-c, name respectively -->
+                    <div class="panel-body">
+                      <p>
+                        Automagically creates a dicecloud sheet for you, with basic character information complete. Requires an account on <a href="https://dicecloud.com">Dicecloud</a>.
+                      </p>
+                      <table class="table table-striped table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Arguments</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><kbd>level</kbd> - What level to create the character.</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <p>
+                        <b>Example</b>: <code>!autochar 1</code>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              
                 <table class="table table-striped table-bordered">
                     <thead>
                     <tr>
